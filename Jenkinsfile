@@ -1,4 +1,4 @@
-properties([parameters([choice(choices: 'main\npr', name: 'msg')])])
+build job: 'exm', parameters: [string(name: 'msg', value: 'main')]
 
 node{
     stage('build stage')
